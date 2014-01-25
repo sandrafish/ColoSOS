@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> b519ceb463269b595127ff80417f8f2cd9a9686d
 import urllib
 import zipfile
 
