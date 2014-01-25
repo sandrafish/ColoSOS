@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b519ceb463269b595127ff80417f8f2cd9a9686d
 import urllib
 import zipfile
 
@@ -24,6 +27,7 @@ targetEncoding = "utf-8"
 source = open("2013_ExpenditureData.csv")
 target = open("2013_ExpData.csv", "w") 
 target.write(unicode(source.read(), sourceEncoding).encode(targetEncoding))
+<<<<<<< HEAD
 
 # the second url i want to get
 URL = "http://tracer.sos.colorado.gov/PublicSite/Docs/BulkDataDownloads/2014_ExpenditureData.csv.zip"
@@ -47,3 +51,5 @@ targetEncoding = "utf-8"
 source = open("2014_ExpenditureData.csv")
 target = open("2014_ExpData.csv", "w") 
 target.write(unicode(source.read(), sourceEncoding).encode(targetEncoding))
+=======
+>>>>>>> b519ceb463269b595127ff80417f8f2cd9a9686d
