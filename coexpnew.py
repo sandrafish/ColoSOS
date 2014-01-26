@@ -18,7 +18,7 @@ zip = zipfile.ZipFile("2013_ExpenditureData.csv.zip", 'r')
 zip.extractall()
 zip.close()
 
-# the second url to get
+# the second url i want to get
 URL = "http://tracer.sos.colorado.gov/PublicSite/Docs/BulkDataDownloads/2014_ExpenditureData.csv.zip"
 
 #the web connection
@@ -29,12 +29,18 @@ with open("2014_ExpenditureData.csv.zip", "w") as output:
      output.write(web_cnx)
 output.close()
 
-# unzip the file
+#unzip the file
 zip = zipfile.ZipFile("2014_ExpenditureData.csv.zip", 'r')
 zip.extractall()
 zip.close()
 
-# change the encoding
+
+#f = open(fname).readlines()
+#firstLine = f.pop(0) #removes the first line
+#for line in f:
+
+
+# change the encoding and append
 sourceEncoding = "iso-8859-1"
 targetEncoding = "utf-8"
 source = open("2014_ExpenditureData.csv")
@@ -51,10 +57,11 @@ for line in f:
 f.close()
 n.close()
 
-
-# change the encoding of new 2013 file and appends to 2014
+# change the encoding and append the second file
 sourceEncoding = "iso-8859-1"
 targetEncoding = "utf-8"
 source = open("2013Exp.csv")
 target = open("2014_ExpData.csv", "a") 
 target.write(unicode(source.read(), sourceEncoding).encode(targetEncoding))
+
+
